@@ -459,7 +459,7 @@ blockquote {
         margin: 8px 0 0 10px;
         display: none;
 
-        @include respond-min(1150px) {
+        @include respond-min(900px) {
             float: left;
             width: 150px;
             display: block;
