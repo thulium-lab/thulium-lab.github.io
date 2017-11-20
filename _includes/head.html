@@ -3,14 +3,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title[page.lang] | escape }}{% else %}{{ site.title[page.lang] | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description[page.lang] }}{% endif %}">
+  <title>{{ site.title[page.lang] | append: "|" | append: site.description[page.lang] }}</title>
   <meta name="ROBOTS" content="ALL" />
   <meta http-equiv="imagetoolbar" content="no" />
   <meta name="MSSmartTagsPreventParsing" content="true" />
 
   <meta name="keywords" content={{ site.keywords[page.lang] }} />
-  <meta name="description" content="" />
+  <meta name="description">Иттербиевый&nbsp;Бортовой Ионный&nbsp;Стандарт</meta>
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | relative_url}}">
