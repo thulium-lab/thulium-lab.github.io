@@ -7,7 +7,7 @@
     <div role="navigation">
       <ul>
         <li {% if page.ref == "details" %}class="active"{% endif %}>
-          <a href={{"/details" | prepend: page.lang | prepend: site.baseurl}}>
+          <a href={{"/details" | prepend: page.lang | relative_url}}>
             {% if page.lang == "ru" %}
               О проекте
             {% else %}
@@ -16,7 +16,7 @@
           </a>
         </li>
         <li {% if page.ref == "partners" %}class="active"{% endif %}>
-          <a href={{"/partners" | prepend: page.lang | prepend: site.baseurl}}>
+          <a href={{"/partners" | prepend: page.lang | relative_url}}>
             {% if page.lang == "ru" %}
               Партнёры
             {% else %}
@@ -25,7 +25,7 @@
           </a>
         </li>
         <li {% if page.ref == "publications" %}class="active"{% endif %}>
-          <a href={{"/publications" | prepend: page.lang | prepend: site.baseurl}}>
+          <a href={{"/publications" | prepend: page.lang | relative_url}}>
             {% if page.lang == "ru" %}
               Публикации
             {% else %}
@@ -34,7 +34,7 @@
           </a>
         </li>
         <li {% if page.ref == "about" %}class="active"{% endif %}>
-          <a href={{"/about" | prepend: page.lang | prepend: site.baseurl}}>
+          <a href={{"/about" | prepend: page.lang | relative_url}}>
             {% if page.lang == "ru" %}
               О нас
             {% else %}
