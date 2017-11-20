@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+        try {
+          w.yaCounter46558653 = new Ya.Metrika({
+            id:46558653,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+          });
+        } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/46558653" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109675741-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109675741-1');
+  </script>
+  <!-- /Global site tag (gtag.js) - Google Analytics -->
+  <body id="home" class="home">
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+    <script src="/js/factRU.js"></script>
+    <script>shuffleFact()</script>
+    <script>
+    function extless(input) {
+        return input.replace(/(.*)\.[^.]+$/, '$1');
+    }
+    var require = {
+        shim: {
+            'jquery': [],
+            'jquery.inview': ["jquery"],
+            'jquery.payment': ["jquery"],
+            'jquery.flot': ["jquery"],
+            'jquery.unveil': ["jquery"],
+            'stripe': {
+              exports: 'Stripe'
+            }
+        },
+        paths: {
+            "jquery": extless("/js/lib/jquery/dist/jquery.min.js"),
+            "jquery.inview": extless("/js/lib/jquery.inview/jquery.inview.min.js"),
+            "jquery.payment": extless("/js/lib/jquery.payment/lib/jquery.payment.js"),
+            "jquery.unveil": extless("/js/lib/unveil/jquery.unveil.min.js"),
+            "jquery.flot": extless("/js/lib/jquery-flot/jquery.flot.min.js"),
+            "clipboard": extless("/js/lib/clipboard/dist/clipboard.min.js"),
+            "mod/floating-warning": extless("/js/mod/floating-warning.js"),
+            "mod/list-collapsing": extless("/js/mod/list-collapsing.js"),
+            "mod/list-feature": extless("/js/mod/list-feature.js"),
+            "mod/mobile-menu": extless("/js/mod/mobile-menu.js"),
+            "mod/version-switcher": extless("/js/mod/version-switcher.js"),
+            "mod/search-key": extless("/js/mod/search-key.js"),
+            "mod/stripe-custom-checkout": extless("/js/mod/stripe-custom-checkout.js"),
+            "mod/stripe-change-card": extless("/js/mod/stripe-change-card.js"),
+            "stripe-checkout": "https://checkout.stripe.com/checkout",
+            "stripe": "https://js.stripe.com/v2/?"  // ? needed due to require.js
+        }
+    };
+    </script>
+    <script data-main="/js/main.js" src="/js/lib/require.js"></script>
+  </body>
+
+</html>

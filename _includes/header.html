@@ -1,0 +1,63 @@
+<div role="banner" id="top">
+  <div class="container">
+    <a class="logo" href={{site.baseurl}}>
+      {{site.title[page.lang]}}
+    </a>
+    <p class="meta">{{site.description[page.lang]}}</p>
+    <div role="navigation">
+      <ul>
+        <li {% if page.ref == "details" %}class="active"{% endif %}>
+          <a href={{"/details" | prepend: page.lang | prepend: site.baseurl}}>
+            {% if page.lang == "ru" %}
+              О проекте
+            {% else %}
+              About project
+            {% endif %}
+          </a>
+        </li>
+        <li {% if page.ref == "partners" %}class="active"{% endif %}>
+          <a href={{"/partners" | prepend: page.lang | prepend: site.baseurl}}>
+            {% if page.lang == "ru" %}
+              Партнёры
+            {% else %}
+              Partners
+            {% endif %}
+          </a>
+        </li>
+        <li {% if page.ref == "publications" %}class="active"{% endif %}>
+          <a href={{"/publications" | prepend: page.lang | prepend: site.baseurl}}>
+            {% if page.lang == "ru" %}
+              Публикации
+            {% else %}
+              Publications
+            {% endif %}
+          </a>
+        </li>
+        <li {% if page.ref == "about" %}class="active"{% endif %}>
+          <a href={{"/about" | prepend: page.lang | prepend: site.baseurl}}>
+            {% if page.lang == "ru" %}
+              О нас
+            {% else %}
+              About us
+            {% endif %}
+          </a>
+        </li>
+        <li>
+          <script type="text/javascript">
+            var addthis_config = {
+              ui_language: 'ru',
+              data_track_clickback: false
+            }
+          </script>
+          <a class="addthis_button">
+            <font color="LightPink">&#9829;</font> Поделиться
+          </a>
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <script type="text/javascript"
+          src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a0abdd3f008908b">
+          </script>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
