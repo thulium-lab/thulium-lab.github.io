@@ -7,12 +7,12 @@
 
 # Site settings
 title:
-  en: Ytterbium
-  ru: Иттербий
+  en: YBIS
+  ru: ИБИС
 email: info@ytterbium.space
 description:
-  en: A new generation of on-board frequency standards
-  ru: Новое поколение бортовых стандартов частоты
+  en: Ytterbium on-Board Ion Standard
+  ru: Иттербиевый Бортовой Ионный Стандарт
 keywords:
   en: "optical frequency standard, optical clock, Navigation Satellite System, ultracold ions, high finesse optical cavity, femtosecond frequency comb, ytterbium optical clock, quadrupole ion trap, GNSS, unmanned systems"
   ru: "оптические стандарты частоты, оптические часы, спутниковые навигационные системы,ультахолодные ионы, высокостабильные оптические резонаторы, фемтосекундный синтезатор частоты, иттербиевый стандарт частоты, квадрупольная ионная ловушка, ГЛОНАСС, беспилотные системы"

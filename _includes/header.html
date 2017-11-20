@@ -24,21 +24,21 @@
             {% endif %}
           </a>
         </li>
-        <li {% if page.ref == "publications" %}class="active"{% endif %}>
-          <a href={{"/publications" | prepend: page.lang | relative_url}}>
-            {% if page.lang == "ru" %}
-              Публикации
-            {% else %}
-              Publications
-            {% endif %}
-          </a>
-        </li>
         <li {% if page.ref == "about" %}class="active"{% endif %}>
           <a href={{"/about" | prepend: page.lang | relative_url}}>
             {% if page.lang == "ru" %}
               О нас
             {% else %}
               About us
+            {% endif %}
+          </a>
+        </li>
+        <li {% if page.ref == "publications" %}class="active"{% endif %}>
+          <a href={{"/publications" | prepend: page.lang | relative_url}}>
+            {% if page.lang == "ru" %}
+              Публикации
+            {% else %}
+              Publications
             {% endif %}
           </a>
         </li>
