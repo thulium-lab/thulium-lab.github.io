@@ -14,7 +14,7 @@ description:
   en: A new generation of on-board frequency standards
   ru: Новое поколение бортовых стандартов частоты
 keywords:
-  en: Ytterbium
+  en: "optical frequency standard, optical clock, Navigation Satellite System, ultracold ions, high finesse optical cavity, femtosecond frequency comb, ytterbium optical clock, quadrupole ion trap, GNSS, unmanned systems"
   ru: "оптические стандарты частоты, оптические часы, спутниковые навигационные системы,ультахолодные ионы, высокостабильные оптические резонаторы, фемтосекундный синтезатор частоты, иттербиевый стандарт частоты, квадрупольная ионная ловушка, ГЛОНАСС, беспилотные системы"
 # baseurl: "/ytterbium" # the subpath of your site, e.g. /blog
 # url: "https://5981.github.io" # the base hostname & protocol for your site
