@@ -33,6 +33,15 @@
             {% endif %}
           </a>
         </li>
+        <li {% if page.ref == "gallery" %}class="active"{% endif %}>
+          <a href={{"/gallery" | prepend: page.lang | relative_url}}>
+            {% if page.lang == "ru" %}
+              Галерея
+            {% else %}
+              Gallery
+            {% endif %}
+          </a>
+        </li>
         <li {% if page.ref == "publications" %}class="active"{% endif %}>
           <a href={{"/publications" | prepend: page.lang | relative_url}}>
             {% if page.lang == "ru" %}

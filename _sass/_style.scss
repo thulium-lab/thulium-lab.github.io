@@ -459,7 +459,7 @@ blockquote {
         margin: 8px 0 0 10px;
         display: none;
 
-        @include respond-min(900px) {
+        @include respond-min(910px) {
             float: left;
             width: 150px;
             display: block;
@@ -470,18 +470,20 @@ blockquote {
 
 
     .logo {
-        @include font-size(40);
+        // @include font-size(40);
+        @include font-size(20);
         @include sans-serif;
-        background: url(../img/yb-white.png) 0 0 no-repeat;
+        background: url(../img/ibis.png) 0 0 no-repeat;
         background-size: 48px 34px;
         color: #FFF;
         display: block;
         float: left;
-        font-weight: 700;
+        // font-weight: 700;
         margin: 10px;
         overflow: hidden;
         text-decoration: none;
-        text-indent: 100%;
+        // text-indent: 100%;
+        text-align: right;
         width: 104px;
         height: 36px;
 
@@ -950,20 +952,23 @@ blockquote {
     .logo {
         @include font-size(40);
         @include sans-serif;
-        background: url(../img/yb-white.png) 0 0 no-repeat;
+        background: url(../img/ibis.png) 0 0 no-repeat;
         background-size: 95px 67px;
         color: $green-dark;
         display: block;
         font-weight: 700;
-        height: 50px;
+        height: 69px;
         margin: 10px;
         overflow: hidden;
         text-decoration: none;
         text-indent: 100%;
-        width: 142px;
+        width: 220px;
         @include respond-min(768px) {
             float: left;
             margin: 20px 90px 0 0;
+            color: $white;
+            text-align: right;
+            text-indent: 0%;
         }
     }
 
