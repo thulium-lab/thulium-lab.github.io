@@ -473,7 +473,7 @@ blockquote {
         // @include font-size(40);
         @include font-size(20);
         @include sans-serif;
-        background: url(../img/ibis.png) 0 0 no-repeat;
+        background: url(../img/ibis_back.png) 0 0 no-repeat;
         background-size: 48px 34px;
         color: #FFF;
         display: block;
@@ -952,7 +952,7 @@ blockquote {
     .logo {
         @include font-size(40);
         @include sans-serif;
-        background: url(../img/ibis.png) 0 0 no-repeat;
+        background: url(../img/ibis_back.png) 0 0 no-repeat;
         background-size: 95px 67px;
         color: $green-dark;
         display: block;
