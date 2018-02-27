@@ -16,7 +16,7 @@ facts[1] = "Current definition of a \
  facts[2] = "A <a href='https://en.wikipedia.org/wiki/Leap_second'>leap second</a> \
             is a one-second adjustment that is occasionally applied to Coordinated \
             Universal Time (UTC) in order to keep its time of day close to the mean \
-            solar time as realized by UT1. This adjusment occurs on June 30 or \
+            solar time as realized by UT1. This adjustment occurs on June 30 or \
             December 31, and at the end of these days after 23:59:59 goes 23:59:60.";
 facts[3] = "<a href='https://en.wikipedia.org/wiki/Thoth'>Thoth</a>, one of the \
             deities of the Egyptian pantheon, has been depicted in many ways \
