@@ -1,6 +1,6 @@
 <div role="banner" id="top">
   <div class="container">
-    <a class="logo" href={{"/" | relative_url}}>
+    <a class="logo" href={{ page.lang | relative_url}}>
       {{site.title[page.lang]}}
     </a>
     <p class="meta">{{site.description[page.lang]}}</p>
@@ -11,7 +11,7 @@
             {% if page.lang == "ru" %}
               О проекте
             {% else %}
-              About project
+              About
             {% endif %}
           </a>
         </li>
@@ -54,12 +54,17 @@
         <li>
           <script type="text/javascript">
             var addthis_config = {
-              ui_language: 'ru',
+              ui_language: {{ page.lang }},
               data_track_clickback: false
             }
           </script>
           <a class="addthis_button">
-            <font color="LightPink">&#9829;</font> Поделиться
+            <font color="LightPink">&#9829;</font>
+            {% if page.lang == "ru" %}
+              Поделиться
+            {% else %}
+              Share
+            {% endif %}
           </a>
           <!-- Go to www.addthis.com/dashboard to customize your tools -->
           <script type="text/javascript"

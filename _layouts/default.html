@@ -55,7 +55,11 @@
     </div>
 
     {% include footer.html %}
-    <script src="/js/factRU.js"></script>
+    {% if page.lang == "ru" %}
+      <script src="/js/factRU.js"></script>
+    {% else %}
+      <script src="/js/factEN.js"></script>
+    {% endif %}
     <script>shuffleFact()</script>
     <script>
     function extless(input) {

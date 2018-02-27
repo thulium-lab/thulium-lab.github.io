@@ -24,6 +24,14 @@
           <a class="github" href="https://pages.github.com/">GitHub Pages</a>&emsp;
           <span>email: </span>
           <a href="mailto:info@ytterbium.space">info@ytterbium.space</a>
+
+          <div class="language">
+            {% if page.lang == "ru" %}
+              <a href={{ page.url | replace_first: "ru", "en" | relative_url }}>EN</a>|RU
+            {% else %}
+              EN|<a href={{ page.url | replace_first: "en", "ru" | relative_url }}>RU</a>
+            {% endif %}
+          </div>
         </li>
         <li>
             <!-- Start of StatCounter Code for Default Guide -->
