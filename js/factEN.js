@@ -25,8 +25,15 @@ facts[3] = "<a href='https://en.wikipedia.org/wiki/Thoth'>Thoth</a>, one of the 
             In this form, he can be represented as the reckoner of times and seasons \
             by a headdress of the lunar disk sitting on top of a crescent moon \
             resting on his head.";
+fact = "This interesting fact has the lowest positive probabilty to appear during\
+        a page load. Its only purpose is to give you this link: \
+        <a href='https://t.me/OpticsQuizBot'>@OpticsQuizBot</a>";
 
 var shuffleFact = function() {
   var id = Math.round(Math.random() * (facts.length - 1));
-  document.getElementById('fact').innerHTML = facts[id];
+  if (Math.random() < 0.01) {
+    document.getElementById('fact').innerHTML = fact;
+  } else {
+    document.getElementById('fact').innerHTML = facts[id];
+  }
 }

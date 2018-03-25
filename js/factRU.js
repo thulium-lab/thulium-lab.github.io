@@ -25,8 +25,15 @@ facts[3] = "Древнеегипетский бог <a href='https://ru.wikipedi
             Египтяне также верили, что он вёл счёт времени и создал разделение \
             на месяцы и годы. Тот имел титул «владыка времени», и считался одним \
             из его богов наряду с <a href='https://ru.wikipedia.org/wiki/Хех'>Хех.</a>"
+fact = "Этот интересный факт имеет самую низкую положительную вероятность появится\
+        при загрузке страницы. Единственное его предназначение - предоставить следующую ссылку:\
+        <a href='https://t.me/OpticsQuizBot'>@OpticsQuizBot</a>";
 
 var shuffleFact = function() {
   var id = Math.round(Math.random() * (facts.length - 1));
-  document.getElementById('fact').innerHTML = facts[id];
+  if (Math.random() < 0.01) {
+    document.getElementById('fact').innerHTML = fact;
+  } else {
+    document.getElementById('fact').innerHTML = facts[id];
+  }
 }
