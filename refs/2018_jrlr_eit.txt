@@ -1,0 +1,9 @@
+@article{semerikov2018eit,
+  title={EIT Ground State Cooling Scheme of 171 Yb+ Based on the 2 S 1/2→ 2 P 1/2 Cooling Transition},
+  author={Semerikov, IA and Zalivako, IV and Borisenko, AS and Khabarova, KY and Kolachevsky, NN},
+  journal={Journal of Russian Laser Research},
+  pages={1--7},
+  year={2018},
+  publisher={Springer},
+  url={https://doi.org/10.1007/s10946-018-9753-x}
+}

@@ -1,0 +1,11 @@
+@article{semerikov2018compact,
+  title={Compact Transportable Optical Standard Based on a Single 171 Yb+ Ion (“YBIS” Project)},
+  author={Semerikov, IA and Khabarova, K Yu and Zalivako, IV and Borisenko, AS and Kolachevsky, NN},
+  journal={Bulletin of the Lebedev Physics Institute},
+  volume={45},
+  number={11},
+  pages={337--340},
+  year={2018},
+  publisher={Springer},
+  url={https://doi.org/10.3103/S1068335618110039}
+}

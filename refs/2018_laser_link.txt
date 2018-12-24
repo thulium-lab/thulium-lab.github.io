@@ -1,0 +1,11 @@
+@article{kudeyarov20182,
+  title={2.8 km fiber link with phase noise compensation for transportable Yb+ optical clock characterization},
+  author={Kudeyarov, KS and Vishnyakova, GA and Khabarova, K Yu and Kolachevsky, NN},
+  journal={Laser Physics},
+  volume={28},
+  number={10},
+  pages={105103},
+  year={2018},
+  publisher={IOP Publishing},
+  url={https://doi.org/10.1088/1555-6611/aacfa1}
+}

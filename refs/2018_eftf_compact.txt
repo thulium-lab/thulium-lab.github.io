@@ -1,0 +1,9 @@
+@inproceedings{zalivako2018towards,
+  title={Towards compact transportable optical clock based on 171 Yb+},
+  author={Zalivako, Ilya and Khabarova, Ksenia and Semerikov, Ilya and Borisenko, Alexander and Kolachevsky, Nikolay and Sherstov, Ivan and Bagaev, Sergei and Lugovoy, Alexey and Taichenachev, Alexey and Chepurov, Sergei},
+  booktitle={2018 European Frequency and Time Forum (EFTF)},
+  pages={344--347},
+  year={2018},
+  organization={IEEE},
+  url={https://doi.org/10.1109/EFTF.2018.8409065}
+}
