@@ -3230,3 +3230,42 @@ ul.corporate-members li {
         }
     }
 }
+
+// /* Clearing Styles */
+// /* line 44, /home/thuliumlab/web/5981.github.io/_sass/foundation-components/_clearing.scss */
+// .clearing-thumbs, [data-clearing] {
+//   margin-bottom: 0;
+//   margin-left: 0;
+//   list-style: none;
+// }
+// /* line 172, /home/thuliumlab/web/5981.github.io/_sass/foundation-components/_global.scss */
+// .clearing-thumbs:before, .clearing-thumbs:after, [data-clearing]:before, [data-clearing]:after {
+//   content: " ";
+//   display: table;
+// }
+// /* line 173, /home/thuliumlab/web/5981.github.io/_sass/foundation-components/_global.scss */
+// .clearing-thumbs:after, [data-clearing]:after {
+//   clear: both;
+// }
+// /* line 50, /home/thuliumlab/web/5981.github.io/_sass/foundation-components/_clearing.scss */
+// .clearing-thumbs li, [data-clearing] li {
+//   float: left;
+//   margin-right: 10px;
+// }
+// /* line 55, /home/thuliumlab/web/5981.github.io/_sass/foundation-components/_clearing.scss */
+// .clearing-thumbs[class*="block-grid-"] li, [data-clearing][class*="block-grid-"] li {
+//   margin-right: 0;
+// }
+// /* line 61, /home/thuliumlab/web/5981.github.io/_sass/foundation-components/_block-grid.scss */
+//   .small-block-grid-4 > li {
+//     width: 25%;
+//     list-style: none;
+//   }
+//   /* line 68, /home/thuliumlab/web/5981.github.io/_sass/foundation-components/_block-grid.scss */
+//   .small-block-grid-4 > li:nth-of-type(1n) {
+//     clear: none;
+//   }
+//   /* line 69, /home/thuliumlab/web/5981.github.io/_sass/foundation-components/_block-grid.scss */
+//   .small-block-grid-4 > li:nth-of-type(4n+1) {
+//     clear: both;
+//   }
