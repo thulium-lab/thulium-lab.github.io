@@ -1,0 +1,10 @@
+@article{semerikov2019three,
+  title={Three-dimensional Paul trap with high secular frequency for compact optical clock},
+  author={Semerikov, IA and Zalivako, IV and Borisenko, AS and Aksenov, MD and Vishnyakov, PA and Sidorov, PL and Kolachevskii, NN and Khabarova, K Yu},
+  journal={Bulletin of the Lebedev Physics Institute},
+  volume={46},
+  number={9},
+  pages={297--300},
+  year={2019},
+  publisher={Springer}
+}

@@ -3,7 +3,39 @@ layout: default
 ref: index
 lang: ru
 permalink: /ru/
+roadmap:
+  - year: 2017
+    tag: slide-1
+    image_url: team.jpeg
+    caption: Проект поддержан, начало разработок
+    pos: left
+  - year: 2018
+    tag: slide-2
+    image_url: 2-ion.jpg
+    caption: Захват и охлаждение одиночного иона иттербия
+    pos: right
+  - year: 2018
+    tag: slide-3
+    image_url: prototype.png
+    caption: Разработан макет оптических часов (фотография стенда проекта на выставке "Фотоника-2018")
+    pos: right
+  - year: 2019
+    tag: slide-4
+    image_url: clock_line_rus.png
+    caption: Первая спектроскопия Фурье-ограниченного контура часового перехода
+    pos: left
+  - year: 2019
+    tag: slide-5
+    image_url: full-system.jpg
+    caption: Компактные оптические часы в сборе, готовы к транспортировке
+    pos: right
+  - year: 2020
+    tag: slide-6
+    image_url: team-with-borch.jpeg
+    caption: Демонстрация работы ЭО БОРЧ в Российских космических системах
+    pos: right
 ---
+
 
 <div class="copy-banner">
   <div class="container">
@@ -22,6 +54,43 @@ permalink: /ru/
 <div class="container sidebar-right">
   <div role="main">
     <div class="section">
+      <section>
+        <div class="container">
+            <div class="carousel">
+              {% for item in page.roadmap %}
+                <input type="radio" name="slides"{% if item.tag=="slide-1" %} checked="checked"{% endif %}  id="{{item.tag}}">
+              {% endfor %}
+              <ul class="carousel__slides">
+                {% for item in page.roadmap %}
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/img/{{item.image_url}}" alt="">
+                        </div>
+                        <figcaption>
+                            {{item.caption}}
+                            <span class="credit">{{item.year}}</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                {% endfor %}
+              </ul>    
+                <ul class="carousel__thumbnails">
+                    {% for item in page.roadmap %}
+                    {% capture url %}{{ item.image_url }}{% endcapture %}
+                		{% assign split_url = url | split: '.' %}
+                		{% capture thumb_url %}{{split_url[0]}}-thumb.{{split_url[1]}}{% endcapture %}
+                    <li>
+                      <label for={{item.tag}}>
+                        <img src="/img/{{thumb_url}}" alt="">
+                      </label>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+      
       <h1>Краткая информация</h1>
       <p>
         Одним из проектов в области исследований и разработок по приоритетным
@@ -69,7 +138,7 @@ permalink: /ru/
             Мировыми лидерами в области оптических стандартов частоты
             являются лабораторные образцы оптических часов на ионах иттербия,
             ионах алюминия, атомах иттербия и атомах стронция. В рамках проекта
-            «ИБИС» будут созданы транспортируемые оптические часов на одиночном
+            «ИБИС» были созданы транспортируемые оптические часов на одиночном
             ионе иттербия.
           </p>
       	</dd>

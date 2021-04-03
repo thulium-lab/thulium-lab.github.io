@@ -3,6 +3,37 @@ layout: default
 permalink: /en/
 ref: index
 lang: en
+roadmap:
+  - year: 2017
+    tag: slide-1
+    image_url: team.jpeg
+    caption: Project started, development commences
+    pos: left
+  - year: 2018
+    tag: slide-2
+    image_url: 2-ion.jpg
+    caption: A signle ytterbium ion is trapped and laser cooled
+    pos: right
+  - year: 2018
+    tag: slide-3
+    image_url: prototype.png
+    caption: A model of an optical clock is developed (photo from "Photonics-2018")
+    pos: right
+  - year: 2019
+    tag: slide-4
+    image_url: clock_line_eng.png
+    caption: First spectroscopy of a Fourier-limited clock transition line
+    pos: left
+  - year: 2019
+    tag: slide-5
+    image_url: full-system.jpg
+    caption: Transportable optical clock assembled and ready
+    pos: right
+  - year: 2020
+    tag: slide-6
+    image_url: team-with-borch.jpeg
+    caption: Demonstration of the setup at Russian Space Systems
+    pos: right
 ---
 
 <div class="copy-banner">
@@ -22,6 +53,42 @@ lang: en
 <div class="container sidebar-right">
   <div role="main">
     <div class="section">
+      <section>
+        <div class="container">
+            <div class="carousel">
+              {% for item in page.roadmap %}
+                <input type="radio" name="slides"{% if item.tag=="slide-1" %} checked="checked"{% endif %}  id="{{item.tag}}">
+              {% endfor %}
+              <ul class="carousel__slides">
+                {% for item in page.roadmap %}
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="/img/{{item.image_url}}" alt="">
+                        </div>
+                        <figcaption>
+                            {{item.caption}}
+                            <span class="credit">{{item.year}}</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                {% endfor %}
+              </ul>    
+                <ul class="carousel__thumbnails">
+                    {% for item in page.roadmap %}
+                    {% capture url %}{{ item.image_url }}{% endcapture %}
+                		{% assign split_url = url | split: '.' %}
+                		{% capture thumb_url %}{{split_url[0]}}-thumb.{{split_url[1]}}{% endcapture %}
+                    <li>
+                      <label for={{item.tag}}>
+                        <img src="/img/{{thumb_url}}" alt="">
+                      </label>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
       <h1>Overview</h1>
       <p>
         In order to promote scientific and industrial complex of Russia,

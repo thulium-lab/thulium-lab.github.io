@@ -1,0 +1,10 @@
+@article{chepurov2019spectroscopy,
+  title={Spectroscopy of the quadrupole clock transition of ytterbium-171 ions for optical frequency standard development},
+  author={Chepurov, Sergei Vasil'evich and Lugovoy, Alexey Anatol'evich and Prudnikov, Oleg Nikolaevich and Taichenachev, Aleksei Vladimirovich and Bagayev, Sergei Nikolaevich},
+  journal={Quantum Electronics},
+  volume={49},
+  number={5},
+  pages={412},
+  year={2019},
+  publisher={IOP Publishing}
+}

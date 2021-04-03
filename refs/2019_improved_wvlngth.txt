@@ -1,0 +1,10 @@
+@article{zalivako2019improved,
+  title={Improved Wavelength Measurement of 2 S 1/2→ 2 P 1/2 and 2 D 3/2→ 3 [3/2] 1/2 Transitions in Yb+},
+  author={Zalivako, Ilia and Semerikov, Ilia and Borisenko, Alexander and Smirnov, Vasilii and Vishnyakov, Pavel and Aksenov, Mikhail and Sidorov, Pavel and Kolachevsky, Nikolai and Khabarova, Ksenia},
+  journal={Journal of Russian Laser Research},
+  volume={40},
+  number={4},
+  pages={375--381},
+  year={2019},
+  publisher={Springer}
+}
